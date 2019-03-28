@@ -36,6 +36,7 @@ for p in f1:
         p = p[:-1]
     ws = p.split()
     if ws[0] not in word_dict or ws[1] not in word_dict:
+        print(p)
         continue
 
 #    print(p,ws[0],ws[1],len(word_dict[ws[0]]))
@@ -45,7 +46,7 @@ for p in f1:
 #    print(len(emb))
     train_dic[tuple(emb)] = 1.0
 
-print (len(train_dic))
+
 
 # for key in train_dic:
 #     print (len(key))
@@ -59,7 +60,7 @@ for p in f2:
     emb = word_dict[ws[0]].copy()
     emb.extend(word_dict[ws[1]])
     train_dic[tuple(emb)] = 0.0
-    if len(train_dic) >= 1000:
+    if len(train_dic) >= 2500:
         break
 #print(len(train_dic))
 
@@ -69,7 +70,7 @@ for p in f2:
 
 train_list = list(train_dic.items())
 #print(len(train_list[0][0]))
-rand = [x for x in range(1000)]
+rand = [x for x in range(2500)]
 random.shuffle(rand)
 #print (rand)
 train_input = []
@@ -99,7 +100,7 @@ for t in rand:
 
 
 
-n_in, n_h, n_out, batch_size = 600, 200, 1, 1000
+n_in, n_h, n_out, batch_size = 600, 200, 1, 2500
 
 
 x = torch.tensor(train_input)
@@ -122,16 +123,31 @@ def acc(x, y):
     y_p = model(x)
     cnt = 0.0
 #    print (y_p)
-    related = 0
+    pos = 0
+    t_pos = 0.0
+    f_pos = 0.0
+    cnt = 0.0
     for i in range(len(y_p)):
         if y_p[i][0] >= 0.5:
             res = 1
-            related += 1
+
+            if y[i][0] == 1:
+                t_pos += 1
+            else:
+                f_pos += 1
         else:
             res = 0
+
         if res == y[i][0]:
             cnt += 1
-    print(related, cnt, len(y_p))
+        if y[i][0] == 1:
+            pos += 1
+    precision = float(t_pos / (t_pos + f_pos))
+    recall = float(t_pos / pos)
+    print("Accuracy: ", float(cnt / len(y_p)))
+    print("Precision: ", precision)
+    print("Recall: ", recall)
+    print("F1: ", 2 * recall * precision / (precision + recall))
     return float(cnt / len(y_p))
 
 
@@ -164,8 +180,32 @@ for t in range(500):
     # parameters
     optimizer.step()
 
-print(acc(x, y))
+acc(x, y)
 
-print(acc(x_test, y_test))
+acc(x_test, y_test)
 
+f3 = open("cand.txt", 'r')
+new_cnt = 0
+new_dic = set()
+for p in f3:
+    if p[-1] == '\n':
+        p = p[:-1]
+    ws = p.split()
+    if ws[0] not in word_dict or ws[1] not in word_dict:
+        continue
+    emb = word_dict[ws[0]].copy()
+    #    print(len(emb))
+    emb.extend(word_dict[ws[1]])
+    #    print(len(emb))
+    x = torch.tensor([emb])
+    y = model(x)
+    if y[0][0] > 0.9:
+        new_cnt += 1
+        new_dic.add(p)
+ #       print(p, float(y[0][0]))
 
+print ("Total: ", new_cnt)
+f4 = open("dic_v3_0.txt", 'w')
+for p in new_dic:
+    f4.write(p)
+    f4.write('\n')
