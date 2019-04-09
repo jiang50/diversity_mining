@@ -60,7 +60,7 @@ for p in f2:
     emb = word_dict[ws[0]].copy()
     emb.extend(word_dict[ws[1]])
     train_dic[tuple(emb)] = 0.0
-    if len(train_dic) >= 2500:
+    if len(train_dic) >= 5000:
         break
 #print(len(train_dic))
 
@@ -100,7 +100,7 @@ for t in rand:
 
 
 
-n_in, n_h, n_out, batch_size = 600, 200, 1, 2500
+n_in, n_h, n_out, batch_size = 600, 200, 1, 5000
 
 
 x = torch.tensor(train_input)
@@ -121,7 +121,6 @@ loss_fn = torch.nn.MSELoss(reduction='sum')
 
 def acc(x, y):
     y_p = model(x)
-    cnt = 0.0
 #    print (y_p)
     pos = 0
     t_pos = 0.0
@@ -205,7 +204,7 @@ for p in f3:
  #       print(p, float(y[0][0]))
 
 print ("Total: ", new_cnt)
-f4 = open("dic_v3_0.txt", 'w')
-for p in new_dic:
-    f4.write(p)
-    f4.write('\n')
+# f4 = open("dic_v3_0.txt", 'w')
+# for p in new_dic:
+#     f4.write(p)
+#     f4.write('\n')
