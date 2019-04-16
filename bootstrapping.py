@@ -41,6 +41,9 @@ class Bootstrapping:
             if p[-1] == '\n':
                 p = p[:-1]
             ws = p.split()
+            if ws[0] not in self.word_dict or ws[1] not in self.word_dict:
+                print (p)
+                continue
             emb = self.word_dict[ws[0]].copy()
             emb.extend(self.word_dict[ws[1]])
             if count <= 80:
@@ -58,6 +61,7 @@ class Bootstrapping:
                 p = p[:-1]
             ws = p.split()
             if ws[0] not in self.word_dict or ws[1] not in self.word_dict:
+                print (p)
                 continue
 
             emb = self.word_dict[ws[0]].copy()
@@ -173,7 +177,7 @@ class Bootstrapping:
                 new_cnt += 1
                 self.diversity_phrases.add(p)
                 self.training_dic[tuple(emb)] = 1.0
-                print(p)
+   #             print(p, y[0][0])
         #       print(p, float(y[0][0]))
 
         print("Add ", new_cnt, ' new diversity phrases.')
@@ -198,21 +202,26 @@ class Bootstrapping:
         print("F1: ", res[3])
         thre = 0.5
         prec = res[1]
+        rec = res[2]
         while prec < expected_precision and thre < 1.0:
             thre += 0.01
             prec = self.acc(thre)[1]
+        # while rec < expected_recall and prec >= expected_precision:
+        #     thre -= 0.01
+        #     rec = self.acc(thre)[2]
+        #     prec = self.acc(thre)[1]
         print("When threshold is ", thre, ", precision will be ",prec)
         print ("Add phrases whose score is larger than ", thre)
-        count = self.find_new(prec)
-        return count
+        count = self.find_new(max(0.92,thre))
+        return count,res[3]
 
     def auto_bt(self, expected_precision = 0.95):
         new_cnt = self.run_iteration(expected_precision)
-        while new_cnt > 0:
+        while new_cnt[0] > 3 and new_cnt[1] < 0.895:
             new_cnt = self.run_iteration(expected_precision)
-
+        self.find_new(0.85)
         print ("Total: ", len(self.diversity_phrases))
-        f4 = open("dic_v3_1.txt", 'w')
+        f4 = open("dic_v3_2.txt", 'w')
         for p in self.diversity_phrases:
             f4.write(p)
             f4.write('\n')
@@ -225,4 +234,4 @@ class Bootstrapping:
 
 
 b = Bootstrapping(5000, 200)
-b.auto_bt(0.93)
+b.auto_bt(0.99)
