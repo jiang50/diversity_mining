@@ -1,0 +1,84 @@
+
+To see metrics related to Diversity, visit our Workforce Performance page.
+NVIDIA is  committed to attracting, developing  and retaining the very best talent so that we can keep our standing as one of  the world’s leading technology companies. 
+ We aim to create an environment where great people  can do their best work. 
+  We  believe that a wider collection of perspectives and richer mix of experience  enrich our company, and enable us to make smarter, better informed decisions. We are also committed to providing equal opportunity to all  employees and applicants as stated in our Equal Employment Opportunity Policy and Code of Conduct. 
+Our efforts to improve diversity and inclusion are focused in  three areas:
+Recruiting a diverse  workforce – Targeted recruitment efforts to diverse candidates. Ensuring our  recruiting strategies speak to the widest community of job candidates.  Strengthening internal programs to ensure equality in hiring practices. 
+ Recognizing and  celebrating diverse talent – Conducting systematic compensation and performance review and  analysis to ensure equality. Hosting a mentoring program to connect diverse  employees with our leaders across the globe. Celebrating the diverse talent at  NVIDIA through internal and external communication channels.
+ Support and services – Encouraging and  supporting employee resource groups. Facilitating platforms for employees from  diverse communities to communicate their specific needs.
+  We have  a cross-functional team working to refine and measure our diversity and  inclusion program. The team is focused on the professional and university  level, as well as with youth in middle and high school.  
+ 
+ 
+Foundational Improvements
+We are taking a number of efforts to improve our ability to attract more diverse candidates and enhance our employees’ diversity mindset and understanding. Specifically, we are: 
+
+Driving support for diversity  initiatives through executive staff into all hiring managers – and getting  managers to encourage employee participation in recruiting and inclusion  activities
+Leveraging diversity efforts across  all areas of our business, including Research, Education, Marketing and the  NVIDIA Foundation
+Investing in diversity training  among key hiring manager groups
+
+Recruiting
+Our goals are to increase the number of women and minority employees across all areas of the company, but especially in technical roles. Our recruiting plan includes increasing sponsorships and building awareness at diversity recruiting fairs on several college campuses. 
+Specific  tactics include:
+
+Setting  internal goals for hiring of women and minorities
+Striving to ensure the  recruiting, screening and interview pipeline is at least equal to the  industry’s minority representation
+Developing women and minority  recruiting teams for academic and professional job fairs
+Ensuring all female technical  candidates have a chance to speak with a female employee 
+Writing job  descriptions and recruiting materials to appeal to a broader mix of candidates 
+
+We aim  to participate in campus recruiting fairs run by such organizations as the Society  of Women Engineers*, Out for Undergrads, National Society of Black Engineers,  Society of Hispanic Professional Engineers, and LGBT clubs at partner  universities.
+  We also  aim to participate in professional recruiting fairs, including Grace Hopper,  Women in Technology, Out to Innovate, Vets in Tech*, and Project Hired*
+ *program we are currently investing  in 
+Inclusion
+  Inclusion efforts focus on supporting employee-led groups and creating platforms to recognize our diverse employee population, both externally and internally. 
+  On campus, we support employee-driven groups such as NVIDIA Women in Technology (NV WIT) and NVPride, which includes supporters and members of the LGBT community. These programs have executive staff support and budgets with which to host educational events as well as sponsor events.
+NV WIT is a women-in-technology group that was created by, and for, NVIDIA’s female employees to foster networking. Activities it drives include small, topic-focused groups (for example, new moms, work-life inclusion), bringing in experts from our field to speak to NVIDIA employees, and providing targeted learning and development offerings to our female employees. 
+  NVIDIA works to externally recognize its women  leaders. For the past four years, a number of female executives have been  recognized in the YWCA Silicon Valley Tribute to Women. Our CFO Colette Kress was recognized in 2014 as one of 50 Most Powerful Women in  Technology by the National Diversity Council.
+  Our LGBT community is particularly dynamic and energized. Seven years ago, they formed a group known as NVPride, which is one of our most active employee organizations, with regular internal and external activities and ongoing dialogue. We are working to leverage their spirit to both further engage LGBT employees and to recruit a diverse group of employees in all of our global offices. NVPride will represent NVIDIA for the first time at the San Francisco Pride parade in June 2015. 
+We’ve  taken a number of steps over the past few years to increase support of our LGBT  employees including: strengthening language in our Equal Employment Opportunity  policy and Code of Conduct in regards to sexual orientation, gender identity  and expression; and expanding insurance coverage for same-sex couples and for  transgender health care and surgery. 
+In 2014, we submitted  NVIDIA to the Corporate Equality Index, a national  benchmarking tool on corporate policies and practices pertinent to the LGBT community,  and received a score of 75/100. In April 2015, we signed our name to Texas  Competes, supporting the LGBT community in a state where we have an employee  population that exceeds 400.
+ 
+Future Workforce
+Mindful of the need to take a long-term view  of improving minority representation in the tech fields, we are developing a plan to engage  with girls and minorities around STEM activities.  Since 2014, we have: 
+
+Hosted 230 children of NVIDIA employees for  Bring Your Kid to Work Day. They participated in science-related activities, in  addition to job shadowing
+Sponsored nine FIRST Robotics teams, three of  which were all-girl teams
+Supported City Year in East San Jose, Calif.,  a largely Latino community, which works to keep youth on track to graduate from  high school
+Funded We Teach Science, also working in East  San Jose, to help kids excel in algebra
+Hosted YWCA TechGYRLS program at our Silicon  Valley campus
+Hosted girls from Silicon Valley chapter of  Black Girls Code at our annual developer conference
+
+We are developing in 2015 a mentoring and  tutoring network for employees who wish to help get young girls and minorities  interested in careers in STEM.
+Ecosystem Efforts
+Our  products are used by those in fields such as computer graphics, gaming and life  sciences, where minority representation is also low. To encourage innovation in  these fields, we will support targeted efforts through financial and product  donations.
+  For  the past six years, NVIDIA has held its own developer conference, the GPU  Technology Conference (GTC). We recognize our responsibility to ensure that attendees  are free of harassment and that the event does not create an inappropriate  environment for participants or workers. Three years ago, we implemented an  anti-harassment policy for all attendees, and we have attire-guidelines  for booth attendants. Efforts are also underway to increase the number of women  attending and speaking at the conference, as well as adding more women from  NVIDIA to the speaker review committee.
+  Our first Women@GTC  event took place in 2014. It offered women attendees an opportunity to network  and learn about each other’s work. We repeated the event in 2015, broadening  the conversation to a discussion around how to foster inclusiveness in the tech  industry (watch video from the panel). 
+  To provide women in high performance computing the opportunity to  network, we host a LinkedIn group called Women’s GPU  Computing Network. To highlight the work of women excelling in high performance  computing, we have developed a site that calls out their efforts.   In 2015, we’ll look to broaden the site to speak to middle and high  school-aged girls considering careers in STEM. 
+Performance
+2014 was a benchmark year for determining what we want to track and how to assess our performance. The metrics we are tracking include:
+
+ 
+
+Setting internal goals for increasing hiring of women and minorities
+Striving to make the recruiting, screening and interview pipeline equal to the industry’s minority representation. 
+
+ 
+ 
+
+Reviewing, analyzing compensation and performance biannually 
+Tracking employee-survey metrics with a focus on the view of women and minorities toward NVIDIA work environment.
+
+ 
+ 
+
+
+Monitoring turnover within minority groups against total turnover.
+
+ 
+ 
+
+ 
+ 
+ 
+

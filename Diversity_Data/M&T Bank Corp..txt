@@ -1,0 +1,71 @@
+
+Enable Java Script
+
+                        Either your browser does not support JavaScript, or you have JavaScript disabled.
+            
+                        You must have a JavaScript-enabled browser to use this site.
+                    
+Microsoft Internet Explorer
+To turn on JavaScript in Internet Explorer, follow these steps:
+
+On the Tools menu, click Internet Options, and then click the Security tab.
+Click the Web content zone that you are using (for example, click Local Intranet),
+                            and then click Custom Level button.
+Locate Active scripting under Scripting settings. Click to select the Enable radio button.
+Click OK button on Security Settings and Internet Options windows to save your changes.
+
+To download Internet Explorer 7, click here.
+Firefox
+To turn on JavaScript in Firefox, follow these steps:
+
+On the Tools menu, click Options.., and then click the Content tab.
+Click to select the Enable JavaScript check box.
+Click OK button to save the setting.
+
+To download Firefox 2, click here.
+Safari
+To turn on JavaScript in Safari, follow these steps:
+
+Open Safari
+On the Safari menu, click on Preferences.
+Click the Security icon.
+Click on Enable JavaScript next to the Web Content section if it is not checked
+Close the Preferences window
+Close and restart Safari.
+
+Opera 9.xx series
+To turn on JavaScript in Opera 9.xx series, follow these steps:
+
+Open Opera.         
+On the Tools menu, click Preferences.       
+Click Content in the Preferences list.    
+Check the box next to Enable JavaScript.     
+Click the JavaScript Options button to open the JavaScript Options box. 
+Check the boxes that you want to allow.      
+Click OK.      
+Click OK.   
+                        
+
+Google Chrome(v0.4.154.23)
+To turn on JavaScript in Google Chrome(v0.4.154.23), follow these steps:
+
+First close any open Chrome windows.
+Right click on a blank area of your Desktop.
+Select New.
+Create a new Shortcut with the following in the "Type the location of 
+            the item:" text box:
+            
+             
+For Windows Vista:
+%userprofile%\Local\Google\Chrome\Application\chrome.exe -enable-javascript    
+                     
+
+For Windows XP:      
+                     
+"%userprofile%\Local Settings\Application Data\Google\chrome.exe" -enable-javascript
+
+                     Note: You'll have to enclose the file path for Windows XP in quotes due to there being spaces in it.      
+             
+
+
+
